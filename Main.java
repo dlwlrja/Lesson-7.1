@@ -20,23 +20,23 @@ public class Main {
         System.out.println("Пельмени");
         int dump = new Scanner(System.in).nextInt();
 
-        isCanDo = true;
         if (eyes>=3 && bones>=1){
             System.out.println("Вы можете сделать эликсир зоркости");
+            isCanDo = true;
         }
-        isCanDo=true;
         if (bones>=2 && dump>=4){
             System.out.println("Вы можете сделать эликсир стойкости");
+            isCanDo = true;
         }
-        isCanDo=true;
         if (tears>=7 && dump>= 1 && eyes>=2){
             System.out.println("Вы можете сделать эликсир скрытности");
+            isCanDo = true;
         }
-        isCanDo = true;
         if (tears>=5 && dump>=10 && eyes>=4 && bones>=3){
             System.out.println("Вы можете сделать запретный эликсир");
+            isCanDo = true;
         }
-        if (isCanDo==false){
+        if (!isCanDo){
             System.out.println("У Вас недостаточно ингредиентов");
         }
 
